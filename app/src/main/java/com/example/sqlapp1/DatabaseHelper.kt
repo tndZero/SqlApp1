@@ -56,7 +56,7 @@ class DatabaseHelper {
                         isDone = false
                     }
                 }
-            } catch (ex: java.lang.Exception) {
+            } catch (ex: Exception) {
                 ex.printStackTrace()
                 val writer = StringWriter()
                 ex.printStackTrace(PrintWriter(writer))
@@ -85,7 +85,7 @@ class DatabaseHelper {
         this.rv = rv
         query = "select UserId,FirstName from Users"
         records = ArrayList<Users>() as ArrayList<Any>
-        adpter = UserAdapter(recordCount as ArrayList<Users>)
+        adpter = UserAdapter(records as ArrayList<Users>)
         functionType = 1
         SyncData().execute("")
     }
