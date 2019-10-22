@@ -1,0 +1,6 @@
+configurations.maybeCreate("default")
+
+/*dependencies {
+    implementation project(path: ':app')
+}*/
+//artifacts.add("default", file('mssql-jdbc-7.4.1.jre11.jar'))

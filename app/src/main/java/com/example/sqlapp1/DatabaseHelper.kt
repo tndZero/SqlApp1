@@ -67,7 +67,7 @@ class DatabaseHelper {
         }
 
         override fun onPostExecute(result: String?) {
-           prog.dismiss()
+           //prog.dismiss()
             Toast.makeText(ctx,message,Toast.LENGTH_SHORT).show()
             if (isDone == false){
 
